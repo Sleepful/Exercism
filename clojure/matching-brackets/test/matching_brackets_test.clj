@@ -86,10 +86,10 @@
 ; annoying line to fix indentation errors in the editor...
 
 (deftest  matches-paren-test
-  (and
-   (true? (matching-brackets/matches-paren "(" ")"))
-   (false? (matching-brackets/matches-paren "{" ")"))
-   (false? (matching-brackets/matches-paren "(" ")"))))
+  (is (and
+       (true? (matching-brackets/matches-paren "(" ")"))
+       (false? (matching-brackets/matches-paren "{" ")"))
+       (false? (matching-brackets/matches-paren "(" "]")))))
 ; }}}}}}}}}}}}}}}}}
 
 (deftest handle-close-paren-test-matches

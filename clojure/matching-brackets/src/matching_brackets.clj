@@ -47,7 +47,7 @@
             (contains? close-paren char)
             (handle-close-paren stack char fail)
               ; ignore non-parens, the list comprehension will move to the next char
-            :else (prn "nothin" char))))
+            :else (do #_(prn "nothin" char)))))
           ;(prn char)))
 
     ; stack must be empty to denote all matched params
