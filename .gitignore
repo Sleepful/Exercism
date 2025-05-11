@@ -1,0 +1,6 @@
+.clj-kondo
+.cpcache
+target
+.exercism
+.lsp
+.vim-bookmarks
